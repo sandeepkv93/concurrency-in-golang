@@ -30,12 +30,6 @@ func main() {
 					fmt.Printf("Received cancellation signal in consumer %d\n", id)
 					return
 				default:
-					timeoutChannel := make(chan bool, 1)
-					go func() {
-						time.Sleep(2 * time.Second)
-						timeoutChannel <- true
-					}()
-
 					valueReceiverChannel := make(chan int, 1)
 					go func() {
 						mu.Lock()
@@ -49,7 +43,7 @@ func main() {
 					}()
 
 					select {
-					case <-timeoutChannel:
+					case <-time.After(2 * time.Second):
 					case item := <-valueReceiverChannel:
 						fmt.Printf("Consumer %d consumed %d\n", id, item)
 					}
