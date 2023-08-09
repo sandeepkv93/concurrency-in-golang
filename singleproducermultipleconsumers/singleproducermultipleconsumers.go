@@ -41,7 +41,6 @@ func main() {
 				case <-context.Done():
 					fmt.Printf("Received cancellation signal in consumer %d\n", id)
 					return
-				case <-time.After(2 * time.Second):
 				case item := <-valueReceiverChannel:
 					fmt.Printf("Consumer %d consumed %d\n", id, item)
 				}
