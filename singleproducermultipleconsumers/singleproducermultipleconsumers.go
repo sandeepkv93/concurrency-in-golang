@@ -25,28 +25,25 @@ func main() {
 		go func(id int) {
 			defer wg.Done()
 			for {
+				valueReceiverChannel := make(chan int, 1)
+				go func() {
+					mu.Lock()
+					for len(queue) == 0 {
+						cond.Wait()
+					}
+					item := queue[0]
+					queue = queue[1:]
+					valueReceiverChannel <- item
+					mu.Unlock()
+				}()
+
 				select {
 				case <-context.Done():
 					fmt.Printf("Received cancellation signal in consumer %d\n", id)
 					return
-				default:
-					valueReceiverChannel := make(chan int, 1)
-					go func() {
-						mu.Lock()
-						for len(queue) == 0 {
-							cond.Wait()
-						}
-						item := queue[0]
-						queue = queue[1:]
-						valueReceiverChannel <- item
-						mu.Unlock()
-					}()
-
-					select {
-					case <-time.After(2 * time.Second):
-					case item := <-valueReceiverChannel:
-						fmt.Printf("Consumer %d consumed %d\n", id, item)
-					}
+				case <-time.After(2 * time.Second):
+				case item := <-valueReceiverChannel:
+					fmt.Printf("Consumer %d consumed %d\n", id, item)
 				}
 
 				time.Sleep(time.Millisecond * 100) // Simulating work
