@@ -61,3 +61,4 @@ func main() {
 | 2     | [Simulate Parallel File Uploader](parallelfileuploader/README.md)                     |
 | 3     | [Single Producer Multiple Consumers](singleproducermultipleconsumers/README.md)       |
 | 4     | [Multiple Producers Multiple Consumers](multipleproducersmultipleconsumers/README.md) |
+| 5     | [Concurrent Merge Sort](concurrentmergesort/README.md)                                |
