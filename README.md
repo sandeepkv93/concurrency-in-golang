@@ -45,7 +45,7 @@ func main() {
     wg := sync.WaitGroup{}
     wg.Add(2)
 
-	go printNumbers()
+    go printNumbers()
 	go printLetters()
 
     wg.Wait()
