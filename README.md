@@ -58,5 +58,6 @@ func main() {
 | Sl No | Program                                                                               |
 | ----- | ------------------------------------------------------------------------------------- |
 | 1     | [Consecutive Number Printing using Goroutines](evenoddprinter/README.md)              |
-| 2     | [Single Producer Multiple Consumers](singleproducermultipleconsumers/README.md)       |
-| 3     | [Multiple Producers Multiple Consumers](multipleproducersmultipleconsumers/README.md) |
+| 2     | [Simulate Parallel File Uploader](parallelfileuploader/README.md)                     |
+| 3     | [Single Producer Multiple Consumers](singleproducermultipleconsumers/README.md)       |
+| 4     | [Multiple Producers Multiple Consumers](multipleproducersmultipleconsumers/README.md) |
