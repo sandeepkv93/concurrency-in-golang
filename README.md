@@ -41,12 +41,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Ray Tracer](./parallelraytracer/)                               | Photorealistic 3D rendering with parallel processing, multiple materials, depth of field, and adaptive sampling                |
 | [Concurrent Game of Life](./concurrentgameoflife/)                        | Conway's cellular automaton with parallel processing, pattern library, real-time simulation, and statistics tracking            |
 | [Parallel N-Body Simulation](./parallelnbody/)                            | Gravitational dynamics simulation with parallel force calculation, multiple integrators, and collision detection               |
+| [Concurrent Auction House](./concurrentauctionhouse/)                     | Thread-safe auction system with concurrent bidding, auto-bidding, real-time notifications, and payment processing     |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **31. Concurrent Auction House**                            | Implement an auction house where multiple clients can bid on items concurrently                                      |
 | **32. Parallel File Compressor**                            | Implement a program that compresses a large file in parallel                                                         |
 | **33. Concurrent Database Connection Pool**                 | Implement a connection pool for a database that can be safely accessed by multiple goroutines concurrently           |
 | **34. Parallel Sudoku Solver**                              | Implement a program that solves a Sudoku puzzle in parallel                                                          |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 35/50 problems (70%)  
-**Current Focus:** Problem 31 (Concurrent Auction House)  
-**Next Batch:** Problems 31-35 (Advanced Algorithms)
+**Completed:** 36/50 problems (72%)  
+**Current Focus:** Problem 32 (Parallel File Compressor)  
+**Next Batch:** Problems 32-36 (Advanced Algorithms)
