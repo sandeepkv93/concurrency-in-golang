@@ -39,12 +39,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Genetic Algorithm](./parallelgeneticalgorithm/)                 | Evolutionary optimization with parallel fitness evaluation, island model, multiple selection/crossover/mutation strategies      |
 | [Concurrent Blockchain Miner](./concurrentblockchainminer/)               | Simplified blockchain with parallel proof-of-work mining, mining pools, difficulty adjustment, and statistics tracking         |
 | [Parallel Ray Tracer](./parallelraytracer/)                               | Photorealistic 3D rendering with parallel processing, multiple materials, depth of field, and adaptive sampling                |
+| [Concurrent Game of Life](./concurrentgameoflife/)                        | Conway's cellular automaton with parallel processing, pattern library, real-time simulation, and statistics tracking            |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **29. Concurrent Game of Life**                             | Implement Conway's Game of Life in parallel                                                                          |
 | **30. Parallel N-Body Simulation**                          | Implement an N-body simulation in parallel to simulate the gravitational interactions between a set of bodies        |
 | **31. Concurrent Auction House**                            | Implement an auction house where multiple clients can bid on items concurrently                                      |
 | **32. Parallel File Compressor**                            | Implement a program that compresses a large file in parallel                                                         |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 33/50 problems (66%)  
-**Current Focus:** Problem 29 (Concurrent Game of Life)  
-**Next Batch:** Problems 29-33 (Advanced Algorithms)
+**Completed:** 34/50 problems (68%)  
+**Current Focus:** Problem 30 (Parallel N-Body Simulation)  
+**Next Batch:** Problems 30-34 (Advanced Algorithms)
