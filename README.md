@@ -55,12 +55,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Particle Swarm Optimization](./parallelparticleswarm/)            | Multi-variant PSO with adaptive parameters, multiple topologies, and parallel evaluation for optimization problems   |
 | [Concurrent Online Gaming Server](./concurrentgamingserver/)                 | High-performance multiplayer gaming server with real-time communication, anti-cheat, and comprehensive game support |
 | [Parallel Bloom Filter](./parallelbloomfilter/)                               | Multi-variant parallel Bloom filter with thread-safe operations, counting support, and advanced optimization       |
+| [Concurrent Distributed Hash Table](./concurrentdht/)                         | Chord-based DHT with consistent hashing, fault tolerance, replication, and scalable network communication          |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **45. Concurrent Distributed Hash Table (DHT)**             | Implement a simplified Distributed Hash Table (DHT) where multiple nodes can join and leave the network concurrently |
 | **46. Parallel Simulated Annealing**                        | Implement the Simulated Annealing (SA) algorithm in parallel to solve an optimization problem                        |
 | **47. Concurrent Real-time Analytics Dashboard**            | Implement a real-time analytics dashboard that can be updated and viewed by multiple users concurrently              |
 | **48. Parallel Traveling Salesperson Problem (TSP) Solver** | Implement a solver for the Traveling Salesperson Problem (TSP) in parallel                                           |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 49/50 problems (98%)  
-**Current Focus:** Problem 45 (Concurrent Distributed Hash Table)  
-**Next Batch:** Problems 45-50 (Advanced Data Structures & Distributed Systems)
+**Completed:** 45/50 problems (90%)  
+**Current Focus:** Problem 46 (Parallel Simulated Annealing)  
+**Remaining:** Problems 46-50 (Advanced Optimization & System Design)
