@@ -48,12 +48,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent API Gateway](./concurrentapigateway/)                         | High-performance API gateway with load balancing, rate limiting, circuit breaker, and advanced traffic management   |
 | [Parallel K-Means Clustering](./parallelkmeans/)                          | Multi-strategy parallel K-means with multiple initialization methods, distance metrics, and performance optimization |
 | [Concurrent Load Balancer](./concurrentloadbalancer/)                     | Advanced load balancer with multiple algorithms, health monitoring, circuit breaker, and session management         |
+| [Parallel Fast Fourier Transform](./parallelfft/)                         | High-performance parallel FFT with multiple algorithms, windowing, and advanced optimization techniques              |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **38. Parallel Fast Fourier Transform (FFT)**               | Implement the Fast Fourier Transform (FFT) algorithm in parallel                                                     |
 | **39. Concurrent Spell Checker**                            | Implement a spell checker that checks a large document in parallel                                                   |
 | **40. Parallel Ant Colony Optimization**                    | Implement the Ant Colony Optimization (ACO) algorithm in parallel to solve a combinatorial optimization problem      |
 | **41. Concurrent Social Network Feed**                      | Implement a social network feed that can be updated and read by multiple users concurrently                          |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 42/50 problems (84%)  
-**Current Focus:** Problem 38 (Parallel Fast Fourier Transform)  
-**Next Batch:** Problems 38-42 (Advanced Algorithms)
+**Completed:** 43/50 problems (86%)  
+**Current Focus:** Problem 39 (Concurrent Spell Checker)  
+**Next Batch:** Problems 39-43 (Advanced Algorithms & Optimization)
