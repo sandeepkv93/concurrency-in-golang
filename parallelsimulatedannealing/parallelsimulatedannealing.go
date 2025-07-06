@@ -3,11 +3,9 @@ package parallelsimulatedannealing
 import (
 	"context"
 	"errors"
-	"fmt"
 	"math"
 	"math/rand"
 	"runtime"
-	"sort"
 	"sync"
 	"sync/atomic"
 	"time"

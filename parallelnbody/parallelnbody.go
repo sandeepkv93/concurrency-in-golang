@@ -450,7 +450,6 @@ func (dfc *DirectForceCalculator) calculateForcesParallel(bodies []*Body, numWor
 func (dfc *DirectForceCalculator) calculatePairwiseForce(body1, body2 *Body) {
 	r := body2.Position.Sub(body1.Position)
 	distanceSq := r.MagnitudeSq() + dfc.softeningParameter*dfc.softeningParameter
-	distance := math.Sqrt(distanceSq)
 	
 	forceMagnitude := dfc.gravitationalConstant * body1.Mass * body2.Mass / distanceSq
 	force := r.Normalize().Mul(forceMagnitude)

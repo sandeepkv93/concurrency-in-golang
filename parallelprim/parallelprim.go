@@ -417,7 +417,7 @@ func Example() {
 	g.AddEdge(4, 5, 6)
 	
 	fmt.Println("Graph edges:")
-	for v, edges := range g.adjacency {
+	for _, edges := range g.adjacency {
 		for _, e := range edges {
 			if e.From < e.To {
 				fmt.Printf("  %d -- %d : %.1f\n", e.From, e.To, e.Weight)

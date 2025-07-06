@@ -205,6 +205,7 @@ type FairStrategy struct {
 	done       chan bool
 	resource   sync.RWMutex
 	activeReads int32
+	currentReq *request
 }
 
 type request struct {
@@ -258,7 +259,7 @@ func (fs *FairStrategy) StartRead() {
 	}
 	fs.queue <- req
 	<-req.ready
-	fs.currentReq = req
+	fs.currentReq = &req
 }
 
 func (fs *FairStrategy) EndRead() {
@@ -275,7 +276,7 @@ func (fs *FairStrategy) StartWrite() {
 	}
 	fs.queue <- req
 	<-req.ready
-	fs.currentReq = req
+	fs.currentReq = &req
 }
 
 func (fs *FairStrategy) EndWrite() {

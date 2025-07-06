@@ -14,6 +14,19 @@ import (
 	"time"
 )
 
+// Job types for ray tracing
+type job struct {
+	x, y int
+}
+
+type pixelJob struct {
+	x, y int
+}
+
+type tileJob struct {
+	startX, startY, endX, endY int
+}
+
 type Vec3 struct {
 	X, Y, Z float64
 }
@@ -311,10 +324,6 @@ func NewRayTracer(config RenderConfig, world World, camera Camera) *RayTracer {
 func (rt *RayTracer) Render(ctx context.Context) image.Image {
 	img := image.NewRGBA(image.Rect(0, 0, rt.Width, rt.Height))
 	
-	type job struct {
-		x, y int
-	}
-	
 	jobs := make(chan job, rt.Width*rt.Height)
 	var wg sync.WaitGroup
 	
@@ -454,11 +463,7 @@ func NewTileRenderer(config RenderConfig, tileSize int, world World, camera Came
 func (tr *TileRenderer) Render(ctx context.Context) image.Image {
 	img := image.NewRGBA(image.Rect(0, 0, tr.Width, tr.Height))
 	
-	type tile struct {
-		x0, y0, x1, y1 int
-	}
-	
-	tiles := make(chan tile, 100)
+	tiles := make(chan tileJob, 100)
 	var wg sync.WaitGroup
 	
 	for i := 0; i < tr.NumWorkers; i++ {
@@ -472,7 +477,7 @@ func (tr *TileRenderer) Render(ctx context.Context) image.Image {
 			y1 := min(y+tr.TileSize, tr.Height)
 			
 			select {
-			case tiles <- tile{x, y, x1, y1}:
+			case tiles <- tileJob{x, y, x1, y1}:
 			case <-ctx.Done():
 				close(tiles)
 				wg.Wait()
@@ -487,7 +492,7 @@ func (tr *TileRenderer) Render(ctx context.Context) image.Image {
 	return img
 }
 
-func (tr *TileRenderer) renderTileWorker(ctx context.Context, wg *sync.WaitGroup, tiles <-chan tile, img *image.RGBA) {
+func (tr *TileRenderer) renderTileWorker(ctx context.Context, wg *sync.WaitGroup, tiles <-chan tileJob, img *image.RGBA) {
 	defer wg.Done()
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
 	
@@ -508,8 +513,8 @@ func (tr *TileRenderer) renderTileWorker(ctx context.Context, wg *sync.WaitGroup
 				return
 			}
 			
-			for y := tile.y0; y < tile.y1; y++ {
-				for x := tile.x0; x < tile.x1; x++ {
+			for y := tile.startY; y < tile.endY; y++ {
+				for x := tile.startX; x < tile.endX; x++ {
 					pixelColor := Vec3{0, 0, 0}
 					for s := 0; s < tr.SamplesPerPixel; s++ {
 						u := (float64(x) + rng.Float64()) / float64(tr.Width-1)
@@ -668,10 +673,6 @@ func NewAdaptiveRenderer(config RenderConfig, minSamples, maxSamples int, varian
 
 func (ar *AdaptiveRenderer) Render(ctx context.Context) image.Image {
 	img := image.NewRGBA(image.Rect(0, 0, ar.baseConfig.Width, ar.baseConfig.Height))
-	
-	type pixelJob struct {
-		x, y int
-	}
 	
 	jobs := make(chan pixelJob, ar.baseConfig.Width*ar.baseConfig.Height)
 	var wg sync.WaitGroup

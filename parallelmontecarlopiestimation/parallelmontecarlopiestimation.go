@@ -181,7 +181,7 @@ func (pe *PiEstimator) worker(workerID int, batchChan <-chan int, totalInsideCir
 	// Create worker-specific random source
 	workerRand := NewStandardRandomSource(time.Now().UnixNano() + int64(workerID))
 
-	for batchID := range batchChan {
+	for _ = range batchChan {
 		batchInside := pe.processBatch(workerRand, pe.batchSize)
 		localInsideCircle += batchInside
 		localSamples += int64(pe.batchSize)
@@ -292,8 +292,11 @@ func (pe *PiEstimator) batchWorker(workerID int, batchChan <-chan int, resultCha
 
 	// Worker-specific random source
 	workerRand := NewStandardRandomSource(time.Now().UnixNano() + int64(workerID))
+	batchCounter := 0
 
-	for batchID := range batchChan {
+	for _ = range batchChan {
+		batchID := batchCounter
+		batchCounter++
 		batchStart := time.Now()
 		batchInside := pe.processBatch(workerRand, pe.batchSize)
 		batchDuration := time.Since(batchStart)
@@ -534,7 +537,8 @@ func (de *DistributedEstimator) EstimateDistributed(totalSamples int64) *Estimat
 	}
 
 	wg.Wait()
-	return &de.merger.Merge(results)
+	result := de.merger.Merge(results)
+	return &result
 }
 
 // Visualization and Statistics

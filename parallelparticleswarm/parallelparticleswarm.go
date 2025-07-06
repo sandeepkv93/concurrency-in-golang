@@ -24,7 +24,7 @@ const (
 type PSOVariant int
 
 const (
-	StandardPSO PSO Variant = iota
+	StandardPSO PSOVariant = iota
 	InertiaWeightPSO
 	ConstrictionPSO
 	AdaptivePSO
@@ -1264,12 +1264,12 @@ func (am *AdaptiveManager) updateParameters(stats *Statistics) {
 		// Adjust parameters based on trend
 		if trend < 0 { // Improving
 			// Increase exploitation
-			am.InertiaWeight = max(0.1, am.InertiaWeight-am.AdaptationRate*0.1)
-			am.SocialWeight = min(4.0, am.SocialWeight+am.AdaptationRate*0.5)
+			am.InertiaWeight = math.Max(0.1, am.InertiaWeight-am.AdaptationRate*0.1)
+			am.SocialWeight = math.Min(4.0, am.SocialWeight+am.AdaptationRate*0.5)
 		} else { // Stagnating
 			// Increase exploration
-			am.InertiaWeight = min(0.9, am.InertiaWeight+am.AdaptationRate*0.1)
-			am.CognitiveWeight = min(4.0, am.CognitiveWeight+am.AdaptationRate*0.3)
+			am.InertiaWeight = math.Min(0.9, am.InertiaWeight+am.AdaptationRate*0.1)
+			am.CognitiveWeight = math.Min(4.0, am.CognitiveWeight+am.AdaptationRate*0.3)
 		}
 		
 		am.LastAdaptation = time.Now()

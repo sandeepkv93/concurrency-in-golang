@@ -611,7 +611,7 @@ func (lb *LoadBalancer) selectServerExcluding(r *http.Request, excludeID string)
 	case RandomSelection:
 		return lb.selectRandom(healthyServers), nil
 	case ConsistentHashing:
-		return lb.selectConsistentHash(r), nil
+		return lb.selectConsistentHash(r)
 	case PowerOfTwoChoices:
 		return lb.selectPowerOfTwo(healthyServers), nil
 	default:

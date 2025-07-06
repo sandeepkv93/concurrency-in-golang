@@ -2,9 +2,7 @@ package paralleltextsearch
 
 import (
 	"bufio"
-	"bytes"
 	"fmt"
-	"io"
 	"os"
 	"path/filepath"
 	"regexp"

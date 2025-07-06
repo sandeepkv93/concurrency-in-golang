@@ -8,6 +8,11 @@ import (
 	"time"
 )
 
+// Shop interface for different types of shops
+type Shop interface {
+	AddCustomer(customer *Customer) bool
+}
+
 // BarberShop represents the barber shop
 type BarberShop struct {
 	name              string
@@ -223,7 +228,7 @@ type Statistics struct {
 
 // CustomerGenerator generates customers at random intervals
 type CustomerGenerator struct {
-	shop            *BarberShop
+	shop            Shop
 	avgArrivalTime  time.Duration
 	avgServiceTime  time.Duration
 	stopChan        chan bool
@@ -231,7 +236,7 @@ type CustomerGenerator struct {
 }
 
 // NewCustomerGenerator creates a new customer generator
-func NewCustomerGenerator(shop *BarberShop, avgArrivalTime, avgServiceTime time.Duration) *CustomerGenerator {
+func NewCustomerGenerator(shop Shop, avgArrivalTime, avgServiceTime time.Duration) *CustomerGenerator {
 	return &CustomerGenerator{
 		shop:           shop,
 		avgArrivalTime: avgArrivalTime,
@@ -443,14 +448,7 @@ func Example() {
 	multiShop.Open()
 	
 	// Generate customers
-	multiGenerator := NewCustomerGenerator(&BarberShop{
-		waitingRoom:     multiShop.waitingRoom,
-		waitingRoomSize: multiShop.waitingRoomSize,
-		shopOpen:        multiShop.shopOpen,
-	}, 100*time.Millisecond, 200*time.Millisecond)
-	
-	// Redirect AddCustomer calls to multi-barber shop
-	multiGenerator.shop.AddCustomer = multiShop.AddCustomer
+	multiGenerator := NewCustomerGenerator(multiShop, 100*time.Millisecond, 200*time.Millisecond)
 	multiGenerator.Start()
 	
 	// Run for 2 seconds

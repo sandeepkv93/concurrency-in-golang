@@ -7,8 +7,6 @@ import (
 	"net"
 	"os"
 	"path/filepath"
-	"runtime"
-	"strconv"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -469,8 +467,7 @@ func (s *FTPServer) handlePASS(client *Client, cmd Command) Response {
 		return Response{CodeBadSequence, "Send username first"}
 	}
 
-	password := cmd.Args[0]
-	// In a real implementation, you'd validate the password
+	_ = cmd.Args[0] // password - In a real implementation, you'd validate the password
 	client.Session.User = UserConfig{
 		Username:    "user", // Would come from USER command
 		HomeDir:     s.config.RootDirectory,

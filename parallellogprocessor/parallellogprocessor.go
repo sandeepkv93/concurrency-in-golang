@@ -7,7 +7,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"path/filepath"
 	"regexp"
 	"strings"
 	"sync"
@@ -254,8 +253,8 @@ func (lp *LogProcessor) processReader(reader io.Reader) (*ProcessingResult, erro
 	aggWg.Wait()
 	
 	// Collect aggregator results
-	for i, result := range aggregatorResults {
-		result.AggregateResults[fmt.Sprintf("aggregator_%d", i)] = result
+	for i, aggResult := range aggregatorResults {
+		result.AggregateResults[fmt.Sprintf("aggregator_%d", i)] = aggResult
 	}
 	
 	result.ProcessingTime = time.Since(start)

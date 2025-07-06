@@ -7,7 +7,6 @@ import (
 	"math"
 	"math/rand"
 	"runtime"
-	"sort"
 	"sync"
 	"sync/atomic"
 	"time"
