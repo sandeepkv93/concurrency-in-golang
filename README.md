@@ -35,12 +35,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Word Count MapReduce](./parallelwordcountmapreduce/)            | Complete MapReduce framework for word counting with configurable mappers/reducers and chunking support                         |
 | [Concurrent FTP Server](./concurrentftpserver/)                           | Full-featured FTP server with authentication, passive mode, file transfers, middleware support, and concurrent client handling |
 | [Parallel Video Encoder](./parallelvideoencoder/)                         | Multi-threaded video encoder with segment-based parallel processing, quality control, and real-time progress tracking          |
+| [Concurrent DNS Resolver](./concurrentdnsresolver/)                       | High-performance DNS resolver with concurrent queries, caching, racing, async resolution, and multiple record types             |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **25. Concurrent DNS Resolver**                             | Implement a Domain Name System (DNS) resolver that can handle multiple queries concurrently                          |
 | **26. Parallel Genetic Algorithm**                          | Implement a genetic algorithm in parallel to solve an optimization problem                                           |
 | **27. Concurrent Blockchain Miner**                         | Implement a simplified blockchain miner that mines blocks in parallel                                                |
 | **28. Parallel Ray Tracer**                                 | Implement a ray tracer that renders an image in parallel                                                             |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 29/50 problems (58%)  
-**Current Focus:** Problem 25 (DNS Resolver)  
+**Completed:** 30/50 problems (60%)  
+**Current Focus:** Problem 26 (Parallel Genetic Algorithm)  
 **Next Batch:** Problems 26-30 (Advanced Algorithms)
