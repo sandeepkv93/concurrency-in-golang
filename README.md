@@ -36,12 +36,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent FTP Server](./concurrentftpserver/)                           | Full-featured FTP server with authentication, passive mode, file transfers, middleware support, and concurrent client handling |
 | [Parallel Video Encoder](./parallelvideoencoder/)                         | Multi-threaded video encoder with segment-based parallel processing, quality control, and real-time progress tracking          |
 | [Concurrent DNS Resolver](./concurrentdnsresolver/)                       | High-performance DNS resolver with concurrent queries, caching, racing, async resolution, and multiple record types             |
+| [Parallel Genetic Algorithm](./parallelgeneticalgorithm/)                 | Evolutionary optimization with parallel fitness evaluation, island model, multiple selection/crossover/mutation strategies      |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **26. Parallel Genetic Algorithm**                          | Implement a genetic algorithm in parallel to solve an optimization problem                                           |
 | **27. Concurrent Blockchain Miner**                         | Implement a simplified blockchain miner that mines blocks in parallel                                                |
 | **28. Parallel Ray Tracer**                                 | Implement a ray tracer that renders an image in parallel                                                             |
 | **29. Concurrent Game of Life**                             | Implement Conway's Game of Life in parallel                                                                          |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 30/50 problems (60%)  
-**Current Focus:** Problem 26 (Parallel Genetic Algorithm)  
-**Next Batch:** Problems 26-30 (Advanced Algorithms)
+**Completed:** 31/50 problems (62%)  
+**Current Focus:** Problem 27 (Concurrent Blockchain Miner)  
+**Next Batch:** Problems 27-31 (Advanced Algorithms)
