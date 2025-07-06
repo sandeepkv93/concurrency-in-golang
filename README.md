@@ -46,12 +46,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Database Connection Pool](./concurrentdbpool/)                 | Thread-safe database connection pool with health monitoring, lifecycle management, and comprehensive metrics tracking |
 | [Parallel Sudoku Solver](./parallelsudokusolver/)                         | Multi-strategy concurrent Sudoku solver with backtracking, constraint propagation, and intelligent heuristics       |
 | [Concurrent API Gateway](./concurrentapigateway/)                         | High-performance API gateway with load balancing, rate limiting, circuit breaker, and advanced traffic management   |
+| [Parallel K-Means Clustering](./parallelkmeans/)                          | Multi-strategy parallel K-means with multiple initialization methods, distance metrics, and performance optimization |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **36. Parallel K-Means Clustering**                         | Implement the K-Means clustering algorithm in parallel                                                               |
 | **37. Concurrent Load Balancer**                            | Implement a load balancer that distributes traffic to multiple servers concurrently                                  |
 | **38. Parallel Fast Fourier Transform (FFT)**               | Implement the Fast Fourier Transform (FFT) algorithm in parallel                                                     |
 | **39. Concurrent Spell Checker**                            | Implement a spell checker that checks a large document in parallel                                                   |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 40/50 problems (80%)  
-**Current Focus:** Problem 36 (Parallel K-Means Clustering)  
-**Next Batch:** Problems 36-40 (Advanced Algorithms)
+**Completed:** 41/50 problems (82%)  
+**Current Focus:** Problem 37 (Concurrent Load Balancer)  
+**Next Batch:** Problems 37-41 (Advanced Algorithms)
