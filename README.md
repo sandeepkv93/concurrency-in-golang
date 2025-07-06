@@ -44,12 +44,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Auction House](./concurrentauctionhouse/)                     | Thread-safe auction system with concurrent bidding, auto-bidding, real-time notifications, and payment processing     |
 | [Parallel File Compressor](./parallelfilecompressor/)                     | High-performance parallel compression with multiple algorithms, chunk-based processing, and real-time progress tracking |
 | [Concurrent Database Connection Pool](./concurrentdbpool/)                 | Thread-safe database connection pool with health monitoring, lifecycle management, and comprehensive metrics tracking |
+| [Parallel Sudoku Solver](./parallelsudokusolver/)                         | Multi-strategy concurrent Sudoku solver with backtracking, constraint propagation, and intelligent heuristics       |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **34. Parallel Sudoku Solver**                              | Implement a program that solves a Sudoku puzzle in parallel                                                          |
 | **35. Concurrent API Gateway**                              | Implement an API gateway that can handle multiple requests concurrently                                              |
 | **36. Parallel K-Means Clustering**                         | Implement the K-Means clustering algorithm in parallel                                                               |
 | **37. Concurrent Load Balancer**                            | Implement a load balancer that distributes traffic to multiple servers concurrently                                  |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 38/50 problems (76%)  
-**Current Focus:** Problem 34 (Parallel Sudoku Solver)  
-**Next Batch:** Problems 34-38 (Advanced Algorithms)
+**Completed:** 39/50 problems (78%)  
+**Current Focus:** Problem 35 (Concurrent API Gateway)  
+**Next Batch:** Problems 35-39 (Advanced Algorithms)
