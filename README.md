@@ -58,12 +58,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Distributed Hash Table](./concurrentdht/)                         | Chord-based DHT with consistent hashing, fault tolerance, replication, and scalable network communication          |
 | [Parallel Simulated Annealing](./parallelsimulatedannealing/)                 | Multi-strategy parallel SA with advanced cooling schedules, perturbation methods, and optimization techniques      |
 | [Concurrent Real-time Analytics Dashboard](./concurrentanalyticsadashboard/)   | Real-time analytics with concurrent event processing, WebSocket communication, and dashboard management         |
+| [Parallel Traveling Salesperson Problem (TSP) Solver](./paralleltsp/)          | Multi-algorithm parallel TSP solver with various optimization strategies and distance metrics                   |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **48. Parallel Traveling Salesperson Problem (TSP) Solver** | Implement a solver for the Traveling Salesperson Problem (TSP) in parallel                                           |
 | **49. Concurrent Version Control System**                   | Implement a simplified version control system that can handle multiple users concurrently                            |
 | **50. Parallel Reinforcement Learning Agent**               | Implement a reinforcement learning agent that learns in parallel                                                     |
 
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 47/50 problems (94%)  
-**Current Focus:** Problem 48 (Parallel Traveling Salesperson Problem Solver)  
-**Remaining:** Problems 48-50 (Advanced System Design & AI)
+**Completed:** 48/50 problems (96%)  
+**Current Focus:** Problem 49 (Concurrent Version Control System)  
+**Remaining:** Problems 49-50 (Advanced System Design & AI)
