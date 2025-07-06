@@ -2,7 +2,6 @@ package concurrentsocialfeed
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"sort"
@@ -597,7 +596,7 @@ func (fw *FeedWorker) updateFollowerFeeds(userID, postID string) FeedResult {
 		}
 	}
 	
-	post, exists := fw.network.posts[postID]
+	_, exists = fw.network.posts[postID]
 	if !exists {
 		fw.network.mutex.RUnlock()
 		return FeedResult{
@@ -1099,7 +1098,11 @@ func (sn *SocialNetwork) CreatePost(userID, content string, postType PostType, v
 	sn.mutex.Unlock()
 	
 	atomic.AddInt64(&sn.statistics.TotalPosts, 1)
-	atomic.AddInt64(&sn.postCounters[userID], 1)
+	
+	// Update post counter for user (requires mutex for map access)
+	sn.mutex.Lock()
+	sn.postCounters[userID]++
+	sn.mutex.Unlock()
 	
 	// Queue feed updates
 	sn.feedWorkerPool.taskQueue <- FeedTask{

@@ -8,7 +8,6 @@ import (
 	"math"
 	"math/rand"
 	"net"
-	"sort"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -58,7 +57,7 @@ const (
 	PlayerJoin MessageType = iota
 	PlayerLeave
 	GameAction
-	ChatMessage
+	ChatMsg
 	GameUpdate
 	PlayerUpdate
 	Heartbeat
@@ -636,7 +635,7 @@ func (gs *GameServer) processMessage(conn *Connection, message *Message) {
 		gs.handlePlayerLeave(conn, message)
 	case GameAction:
 		gs.handleGameAction(conn, message)
-	case ChatMessage:
+	case ChatMsg:
 		gs.handleChatMessage(conn, message)
 	case Heartbeat:
 		gs.handleHeartbeat(conn, message)

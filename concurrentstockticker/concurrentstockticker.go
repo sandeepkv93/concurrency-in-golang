@@ -3,7 +3,6 @@ package concurrentstockticker
 import (
 	"context"
 	"fmt"
-	"math"
 	"math/rand"
 	"sync"
 	"sync/atomic"

@@ -645,7 +645,7 @@ func (s *FTPServer) handleFEAT(client *Client, cmd Command) Response {
 		" MLST type*;size*;modify*;",
 		" MLSD",
 		" UTF8",
-		"211 End"
+		"211 End",
 	}
 	return Response{CodeSystemStatus, strings.Join(features, "\r\n")}
 }

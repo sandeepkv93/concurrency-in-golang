@@ -61,6 +61,7 @@ type Job struct {
 	Error       error
 	Attempts    int
 	Context     context.Context
+	CancelFunc  context.CancelFunc
 }
 
 // JobType defines job categories
@@ -473,6 +474,7 @@ func (w *Worker) executeJob(job Job) {
 
 	// Create context with timeout
 	ctx, cancel := context.WithTimeout(job.Context, job.Timeout)
+	job.CancelFunc = cancel
 	defer cancel()
 
 	// Execute job
@@ -872,8 +874,8 @@ func (js *JobScheduler) CancelJob(jobID string) error {
 
 	if job.Status == StatusRunning {
 		// Cancel the job's context
-		if cancel, ok := job.Context.(context.CancelFunc); ok {
-			cancel()
+		if job.CancelFunc != nil {
+			job.CancelFunc()
 		}
 	}
 
