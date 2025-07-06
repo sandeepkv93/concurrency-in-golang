@@ -49,12 +49,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel K-Means Clustering](./parallelkmeans/)                          | Multi-strategy parallel K-means with multiple initialization methods, distance metrics, and performance optimization |
 | [Concurrent Load Balancer](./concurrentloadbalancer/)                     | Advanced load balancer with multiple algorithms, health monitoring, circuit breaker, and session management         |
 | [Parallel Fast Fourier Transform](./parallelfft/)                         | High-performance parallel FFT with multiple algorithms, windowing, and advanced optimization techniques              |
+| [Concurrent Spell Checker](./concurrentspellchecker/)                     | Advanced spell checker with phonetic matching, contextual suggestions, and parallel document processing             |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **39. Concurrent Spell Checker**                            | Implement a spell checker that checks a large document in parallel                                                   |
 | **40. Parallel Ant Colony Optimization**                    | Implement the Ant Colony Optimization (ACO) algorithm in parallel to solve a combinatorial optimization problem      |
 | **41. Concurrent Social Network Feed**                      | Implement a social network feed that can be updated and read by multiple users concurrently                          |
 | **42. Parallel Particle Swarm Optimization**                | Implement the Particle Swarm Optimization (PSO) algorithm in parallel to solve an optimization problem               |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 43/50 problems (86%)  
-**Current Focus:** Problem 39 (Concurrent Spell Checker)  
-**Next Batch:** Problems 39-43 (Advanced Algorithms & Optimization)
+**Completed:** 44/50 problems (88%)  
+**Current Focus:** Problem 40 (Parallel Ant Colony Optimization)  
+**Next Batch:** Problems 40-44 (Advanced Optimization Algorithms)
