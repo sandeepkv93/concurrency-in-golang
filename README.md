@@ -56,12 +56,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Online Gaming Server](./concurrentgamingserver/)                 | High-performance multiplayer gaming server with real-time communication, anti-cheat, and comprehensive game support |
 | [Parallel Bloom Filter](./parallelbloomfilter/)                               | Multi-variant parallel Bloom filter with thread-safe operations, counting support, and advanced optimization       |
 | [Concurrent Distributed Hash Table](./concurrentdht/)                         | Chord-based DHT with consistent hashing, fault tolerance, replication, and scalable network communication          |
+| [Parallel Simulated Annealing](./parallelsimulatedannealing/)                 | Multi-strategy parallel SA with advanced cooling schedules, perturbation methods, and optimization techniques      |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **46. Parallel Simulated Annealing**                        | Implement the Simulated Annealing (SA) algorithm in parallel to solve an optimization problem                        |
 | **47. Concurrent Real-time Analytics Dashboard**            | Implement a real-time analytics dashboard that can be updated and viewed by multiple users concurrently              |
 | **48. Parallel Traveling Salesperson Problem (TSP) Solver** | Implement a solver for the Traveling Salesperson Problem (TSP) in parallel                                           |
 | **49. Concurrent Version Control System**                   | Implement a simplified version control system that can handle multiple users concurrently                            |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 45/50 problems (90%)  
-**Current Focus:** Problem 46 (Parallel Simulated Annealing)  
-**Remaining:** Problems 46-50 (Advanced Optimization & System Design)
+**Completed:** 46/50 problems (92%)  
+**Current Focus:** Problem 47 (Concurrent Real-time Analytics Dashboard)  
+**Remaining:** Problems 47-50 (Advanced System Design & AI)
