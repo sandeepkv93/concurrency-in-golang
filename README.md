@@ -52,12 +52,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Spell Checker](./concurrentspellchecker/)                     | Advanced spell checker with phonetic matching, contextual suggestions, and parallel document processing             |
 | [Parallel Ant Colony Optimization](./parallelantcolony/)                   | Multi-algorithm ACO system with parallel processing, local search, and advanced optimization strategies              |
 | [Concurrent Social Network Feed](./concurrentsocialfeed/)                   | Real-time social network with concurrent feeds, notifications, caching, and advanced user interaction features      |
+| [Parallel Particle Swarm Optimization](./parallelparticleswarm/)            | Multi-variant PSO with adaptive parameters, multiple topologies, and parallel evaluation for optimization problems   |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **42. Parallel Particle Swarm Optimization**                | Implement the Particle Swarm Optimization (PSO) algorithm in parallel to solve an optimization problem               |
 | **43. Concurrent Online Gaming Server**                     | Implement a server for an online game that can handle multiple players concurrently                                  |
 | **44. Parallel Bloom Filter**                               | Implement a Bloom filter that can be safely accessed by multiple goroutines concurrently                             |
 | **45. Concurrent Distributed Hash Table (DHT)**             | Implement a simplified Distributed Hash Table (DHT) where multiple nodes can join and leave the network concurrently |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 46/50 problems (92%)  
-**Current Focus:** Problem 42 (Parallel Particle Swarm Optimization)  
-**Next Batch:** Problems 42-50 (Advanced Algorithms & Distributed Systems)
+**Completed:** 47/50 problems (94%)  
+**Current Focus:** Problem 43 (Concurrent Online Gaming Server)  
+**Next Batch:** Problems 43-50 (Real-time Systems & Advanced Data Structures)
