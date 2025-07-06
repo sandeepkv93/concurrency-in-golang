@@ -38,12 +38,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent DNS Resolver](./concurrentdnsresolver/)                       | High-performance DNS resolver with concurrent queries, caching, racing, async resolution, and multiple record types             |
 | [Parallel Genetic Algorithm](./parallelgeneticalgorithm/)                 | Evolutionary optimization with parallel fitness evaluation, island model, multiple selection/crossover/mutation strategies      |
 | [Concurrent Blockchain Miner](./concurrentblockchainminer/)               | Simplified blockchain with parallel proof-of-work mining, mining pools, difficulty adjustment, and statistics tracking         |
+| [Parallel Ray Tracer](./parallelraytracer/)                               | Photorealistic 3D rendering with parallel processing, multiple materials, depth of field, and adaptive sampling                |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **28. Parallel Ray Tracer**                                 | Implement a ray tracer that renders an image in parallel                                                             |
 | **29. Concurrent Game of Life**                             | Implement Conway's Game of Life in parallel                                                                          |
 | **30. Parallel N-Body Simulation**                          | Implement an N-body simulation in parallel to simulate the gravitational interactions between a set of bodies        |
 | **31. Concurrent Auction House**                            | Implement an auction house where multiple clients can bid on items concurrently                                      |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 32/50 problems (64%)  
-**Current Focus:** Problem 28 (Parallel Ray Tracer)  
-**Next Batch:** Problems 28-32 (Advanced Algorithms)
+**Completed:** 33/50 problems (66%)  
+**Current Focus:** Problem 29 (Concurrent Game of Life)  
+**Next Batch:** Problems 29-33 (Advanced Algorithms)
