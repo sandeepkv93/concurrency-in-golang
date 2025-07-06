@@ -50,12 +50,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Load Balancer](./concurrentloadbalancer/)                     | Advanced load balancer with multiple algorithms, health monitoring, circuit breaker, and session management         |
 | [Parallel Fast Fourier Transform](./parallelfft/)                         | High-performance parallel FFT with multiple algorithms, windowing, and advanced optimization techniques              |
 | [Concurrent Spell Checker](./concurrentspellchecker/)                     | Advanced spell checker with phonetic matching, contextual suggestions, and parallel document processing             |
+| [Parallel Ant Colony Optimization](./parallelantcolony/)                   | Multi-algorithm ACO system with parallel processing, local search, and advanced optimization strategies              |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **40. Parallel Ant Colony Optimization**                    | Implement the Ant Colony Optimization (ACO) algorithm in parallel to solve a combinatorial optimization problem      |
 | **41. Concurrent Social Network Feed**                      | Implement a social network feed that can be updated and read by multiple users concurrently                          |
 | **42. Parallel Particle Swarm Optimization**                | Implement the Particle Swarm Optimization (PSO) algorithm in parallel to solve an optimization problem               |
 | **43. Concurrent Online Gaming Server**                     | Implement a server for an online game that can handle multiple players concurrently                                  |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 44/50 problems (88%)  
-**Current Focus:** Problem 40 (Parallel Ant Colony Optimization)  
-**Next Batch:** Problems 40-44 (Advanced Optimization Algorithms)
+**Completed:** 45/50 problems (90%)  
+**Current Focus:** Problem 41 (Concurrent Social Network Feed)  
+**Next Batch:** Problems 41-45 (Social Systems & Advanced Data Structures)
