@@ -40,12 +40,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Concurrent Blockchain Miner](./concurrentblockchainminer/)               | Simplified blockchain with parallel proof-of-work mining, mining pools, difficulty adjustment, and statistics tracking         |
 | [Parallel Ray Tracer](./parallelraytracer/)                               | Photorealistic 3D rendering with parallel processing, multiple materials, depth of field, and adaptive sampling                |
 | [Concurrent Game of Life](./concurrentgameoflife/)                        | Conway's cellular automaton with parallel processing, pattern library, real-time simulation, and statistics tracking            |
+| [Parallel N-Body Simulation](./parallelnbody/)                            | Gravitational dynamics simulation with parallel force calculation, multiple integrators, and collision detection               |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **30. Parallel N-Body Simulation**                          | Implement an N-body simulation in parallel to simulate the gravitational interactions between a set of bodies        |
 | **31. Concurrent Auction House**                            | Implement an auction house where multiple clients can bid on items concurrently                                      |
 | **32. Parallel File Compressor**                            | Implement a program that compresses a large file in parallel                                                         |
 | **33. Concurrent Database Connection Pool**                 | Implement a connection pool for a database that can be safely accessed by multiple goroutines concurrently           |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 34/50 problems (68%)  
-**Current Focus:** Problem 30 (Parallel N-Body Simulation)  
-**Next Batch:** Problems 30-34 (Advanced Algorithms)
+**Completed:** 35/50 problems (70%)  
+**Current Focus:** Problem 31 (Concurrent Auction House)  
+**Next Batch:** Problems 31-35 (Advanced Algorithms)
