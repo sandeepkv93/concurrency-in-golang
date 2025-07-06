@@ -45,12 +45,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel File Compressor](./parallelfilecompressor/)                     | High-performance parallel compression with multiple algorithms, chunk-based processing, and real-time progress tracking |
 | [Concurrent Database Connection Pool](./concurrentdbpool/)                 | Thread-safe database connection pool with health monitoring, lifecycle management, and comprehensive metrics tracking |
 | [Parallel Sudoku Solver](./parallelsudokusolver/)                         | Multi-strategy concurrent Sudoku solver with backtracking, constraint propagation, and intelligent heuristics       |
+| [Concurrent API Gateway](./concurrentapigateway/)                         | High-performance API gateway with load balancing, rate limiting, circuit breaker, and advanced traffic management   |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **35. Concurrent API Gateway**                              | Implement an API gateway that can handle multiple requests concurrently                                              |
 | **36. Parallel K-Means Clustering**                         | Implement the K-Means clustering algorithm in parallel                                                               |
 | **37. Concurrent Load Balancer**                            | Implement a load balancer that distributes traffic to multiple servers concurrently                                  |
 | **38. Parallel Fast Fourier Transform (FFT)**               | Implement the Fast Fourier Transform (FFT) algorithm in parallel                                                     |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 39/50 problems (78%)  
-**Current Focus:** Problem 35 (Concurrent API Gateway)  
-**Next Batch:** Problems 35-39 (Advanced Algorithms)
+**Completed:** 40/50 problems (80%)  
+**Current Focus:** Problem 36 (Parallel K-Means Clustering)  
+**Next Batch:** Problems 36-40 (Advanced Algorithms)
