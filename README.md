@@ -53,12 +53,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Ant Colony Optimization](./parallelantcolony/)                   | Multi-algorithm ACO system with parallel processing, local search, and advanced optimization strategies              |
 | [Concurrent Social Network Feed](./concurrentsocialfeed/)                   | Real-time social network with concurrent feeds, notifications, caching, and advanced user interaction features      |
 | [Parallel Particle Swarm Optimization](./parallelparticleswarm/)            | Multi-variant PSO with adaptive parameters, multiple topologies, and parallel evaluation for optimization problems   |
+| [Concurrent Online Gaming Server](./concurrentgamingserver/)                 | High-performance multiplayer gaming server with real-time communication, anti-cheat, and comprehensive game support |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **43. Concurrent Online Gaming Server**                     | Implement a server for an online game that can handle multiple players concurrently                                  |
 | **44. Parallel Bloom Filter**                               | Implement a Bloom filter that can be safely accessed by multiple goroutines concurrently                             |
 | **45. Concurrent Distributed Hash Table (DHT)**             | Implement a simplified Distributed Hash Table (DHT) where multiple nodes can join and leave the network concurrently |
 | **46. Parallel Simulated Annealing**                        | Implement the Simulated Annealing (SA) algorithm in parallel to solve an optimization problem                        |
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 47/50 problems (94%)  
-**Current Focus:** Problem 43 (Concurrent Online Gaming Server)  
-**Next Batch:** Problems 43-50 (Real-time Systems & Advanced Data Structures)
+**Completed:** 48/50 problems (96%)  
+**Current Focus:** Problem 44 (Parallel Bloom Filter)  
+**Next Batch:** Problems 44-50 (Advanced Data Structures & Distributed Systems)
