@@ -59,12 +59,12 @@ This repository contains a comprehensive collection of concurrency problems impl
 | [Parallel Simulated Annealing](./parallelsimulatedannealing/)                 | Multi-strategy parallel SA with advanced cooling schedules, perturbation methods, and optimization techniques      |
 | [Concurrent Real-time Analytics Dashboard](./concurrentanalyticsadashboard/)   | Real-time analytics with concurrent event processing, WebSocket communication, and dashboard management         |
 | [Parallel Traveling Salesperson Problem (TSP) Solver](./paralleltsp/)          | Multi-algorithm parallel TSP solver with various optimization strategies and distance metrics                   |
+| [Concurrent Version Control System](./concurrentvcs/)                           | Git-like VCS with concurrent operations, transaction management, and distributed synchronization              |
 
 ## Pending Problems ⏳
 
 | Problem                                                     | Description                                                                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **49. Concurrent Version Control System**                   | Implement a simplified version control system that can handle multiple users concurrently                            |
 | **50. Parallel Reinforcement Learning Agent**               | Implement a reinforcement learning agent that learns in parallel                                                     |
 
 ## Implementation Highlights
@@ -92,6 +92,6 @@ This repository contains a comprehensive collection of concurrency problems impl
 
 ## Progress
 
-**Completed:** 48/50 problems (96%)  
-**Current Focus:** Problem 49 (Concurrent Version Control System)  
-**Remaining:** Problems 49-50 (Advanced System Design & AI)
+**Completed:** 49/50 problems (98%)  
+**Current Focus:** Problem 50 (Parallel Reinforcement Learning Agent)  
+**Remaining:** Problem 50 (Advanced System Design & AI)
